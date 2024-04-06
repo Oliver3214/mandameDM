@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginBottom="80dp"
+    >
+
+    <ImageView
+        android:id="@+id/profile_image_view"
+        android:layout_width="115dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/circular_bg"
+        android:backgroundTint="#54A867"
+        android:scaleType="centerCrop"
+        android:src="@drawable/person_icon" />
+
+    <EditText
+        android:id="@+id/profile_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Usuario"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/profile_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:background="@drawable/edit_text_rounded_corner"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:fontFamily="@font/luckiest_guy"
+        android:hint="Telefono"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/profle_update_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#54A867"
+            android:fontFamily="@font/luckiest_guy"
+            android:text="Actualizar perfil" />
+
+        <ProgressBar
+            android:id="@+id/profile_progress_bar"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/my_primary" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/luckiest_guy"
+        android:text="Logout" />
+
+
+
+</LinearLayout>
